@@ -38,7 +38,7 @@
   "outputs": {
     "logicAppUrl": {
       "type": "string",
-      "value": "[listCallbackURL(concat(resourceId('Microsoft.Logic/workflows/', new-test-[parameters('environment')]), '/triggers/manual'), '2016-06-01').value]"
+      "value": "[listCallbackURL(concat(resourceId('Microsoft.Logic/workflows/', 'new-test-([parameters('environment')])'), '/triggers/manual'), '2016-06-01').value]"
     }
   }
 }
